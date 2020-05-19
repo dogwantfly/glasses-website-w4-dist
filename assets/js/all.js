@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
-  $('.m-menu').click(function (e) {
+  $('.mobile-menu').click(function (e) {
     e.preventDefault();
     $('.menu').toggleClass('active');
   }); //   // 隱藏所有的 li 內文
@@ -24,19 +24,27 @@ $(document).ready(function () {
   // })
   //blog 手機版下拉選單
 
-  $('.m-menu-blog').click(function (e) {
+  /* $('.mobile-menu-blog').click(function(e) {
     e.preventDefault();
     $('.blog-menu-list').removeClass('close');
     $('.blog-menu-list').toggleClass('active');
-    $('.m-menu-blog').hide();
-    $('.m-menu-blog-up').show();
-  }); //blog 手機版收回選單
-
-  $('.m-menu-blog-up').click(function (e) {
+      $('.mobile-menu-blog').hide();
+    $('.mobile-menu-blog-up').show();
+  })
+  //blog 手機版收回選單
+  $('.mobile-menu-blog-up').click(function(e) {
     e.preventDefault();
+    
     $('.blog-menu-list').addClass('close').removeClass('active');
-    $('.m-menu-blog-up').hide();
-    $('.m-menu-blog').show();
+    $('.mobile-menu-blog-up').hide();
+    $('.mobile-menu-blog').show();
+  }) */
+  //blog下拉選單
+
+  $('.mobile-menu-blog').on('click', function () {
+    $('.mobile-menu-blog').toggleClass('active');
+    $('.blog-nav').toggleClass('active');
+    $('.js-blog-menu-list').toggleClass('active');
   });
 });
 "use strict";
