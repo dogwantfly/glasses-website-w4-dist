@@ -7,20 +7,26 @@
     }
 }
 .blog-nav{
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 5;
-    height: 0;
-    &.active{
-        height: 100%;
+    @include phone{
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        height: 0;
+        &.active{
+            height: 100%;
+        }
     }
+    
 }
 .mobile-menu-blog{
     background-color: $color-light;
     border: 1px solid #000;
-    display: flex;
-    justify-content: center;
+    @include phone{
+        display: flex;
+        justify-content: center;
+    }
+    
     .blog-dropdown-up{
         display: none;
     }
@@ -55,10 +61,10 @@
         a{
             display: block;
             font-size: 20px;
-            padding: 13px 24px;
+            padding: 11px 24px;
             @include pad{
                 font-size: $font-size-xs;
-                padding: 16px;
+                padding: 14px 16px;
             }
             @include phone{
                 color: #000;
