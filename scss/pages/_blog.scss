@@ -20,6 +20,7 @@
     
 }
 .mobile-menu-blog{
+    display: none;
     background-color: $color-light;
     border: 1px solid #000;
     @include phone{

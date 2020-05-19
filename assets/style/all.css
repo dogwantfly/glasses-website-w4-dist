@@ -1743,6 +1743,7 @@ select {
       height: 100%; } }
 
 .mobile-menu-blog {
+  display: none;
   background-color: #fff;
   border: 1px solid #000; }
   @media (max-width: 767px) {
