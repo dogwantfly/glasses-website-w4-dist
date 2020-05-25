@@ -821,7 +821,6 @@ select {
   @media (max-width: 767px) {
     .crossover-product__content__more {
       background-image: url("../img/5.png");
-      height: 53.53%;
       background-position: 0 0;
       flex-direction: column-reverse; } }
 
@@ -1139,7 +1138,7 @@ select {
   @media (max-width: 767px) {
     .title-icon {
       transform: scale(0.4145);
-      margin-left: -12px; } }
+      margin-left: 0px; } }
 
 .faq-subtitle {
   font-size: 32px;
